@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/BookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bookg"
+        android:background="#ffffff"
+        android:layout_above="@+id/SearchButton"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/SearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:background="#ffffff"
+        android:layout_above="@+id/NewsButton"
+        android:layout_alignStart="@+id/NewsButton" />
+
+    <ImageButton
+        android:id="@+id/NewsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/news"
+        android:background="#ffffff"
+        android:layout_above="@+id/FileButton"
+        android:layout_alignStart="@+id/FileButton" />
+
+    <ImageButton
+        android:id="@+id/InfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/info"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/FileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/file"
+        android:background="#ffffff"
+        android:layout_above="@+id/InfoButton"
+        android:layout_alignStart="@+id/InfoButton" />
+
+</RelativeLayout>

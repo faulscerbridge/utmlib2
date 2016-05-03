@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Name"/>
+        </FrameLayout>
+
+    <ImageView
+        android:id="@+id/histbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/histtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Title"
+    android:layout_below="@id/toolbar"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="17sp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/histdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Returned Date"
+        android:layout_toRightOf="@+id/histtitle"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/toolbar"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/histremarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fines"
+        android:layout_below="@id/toolbar"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/histdate"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/listHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/histbar"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+
+        />
+    </RelativeLayout>

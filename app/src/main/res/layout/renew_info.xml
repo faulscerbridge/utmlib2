@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+
+    <CheckBox
+        android:id="@+id/checkBoxrenew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+         />
+
+
+
+    <TextView
+        android:id="@+id/renewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="91dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/checkBoxrenew" />
+
+</RelativeLayout>
