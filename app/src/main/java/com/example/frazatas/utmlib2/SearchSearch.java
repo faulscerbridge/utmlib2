@@ -209,7 +209,7 @@ public class SearchSearch extends ActionBarActivity  {
                     nameValuePairs.add(new BasicNameValuePair("valueIWantToSend2", valueIWantToSend2));
                     nameValuePairs.add(new BasicNameValuePair("valueIWantToSend3", valueIWantToSend3));
                     DefaultHttpClient httpclient = new DefaultHttpClient();//(new BasicHttpParams());
-                    HttpPost httppost = new HttpPost("http://utmlibraryapp.site88.net/new.php");
+                    HttpPost httppost = new HttpPost("http://domain/new.php");
                     httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     //httppost.setHeader("Content-type", "application/json");
                     HttpResponse response = httpclient.execute(httppost);
