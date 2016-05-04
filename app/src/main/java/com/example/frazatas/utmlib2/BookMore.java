@@ -99,7 +99,7 @@ public class BookMore extends Activity {
                     nameValuePairs.add(new BasicNameValuePair("ID", ID));
 
                     DefaultHttpClient httpclient = new DefaultHttpClient();//(new BasicHttpParams());
-                    HttpPost httppost = new HttpPost("http://utmlibraryapp.site88.net/bookhold.php");
+                    HttpPost httppost = new HttpPost("http://domain/bookhold.php");
                     httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     //httppost.setHeader("Content-type", "application/json");
                     HttpResponse response = httpclient.execute(httppost);
