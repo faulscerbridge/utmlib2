@@ -112,7 +112,7 @@ public class UserInfo extends ActionBarActivity {
                     List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
                     nameValuePairs.add(new BasicNameValuePair("data1", data1));
                     DefaultHttpClient httpclient = new DefaultHttpClient();//(new BasicHttpParams());
-                    HttpPost httppost = new HttpPost("http://utmlibraryapp.site88.net/status.php");
+                    HttpPost httppost = new HttpPost("http://domain/status.php");
                     httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     //httppost.setHeader("Content-type", "application/json");
                     HttpResponse response = httpclient.execute(httppost);
