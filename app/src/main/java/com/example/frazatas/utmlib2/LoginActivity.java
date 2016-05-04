@@ -76,7 +76,7 @@ public class LoginActivity extends Activity {
             int tmpu;
 
             try {
-                URL url = new URL("http://utmlibraryapp.site88.net/log.php");
+                URL url = new URL("http://domain/log.php");
                 String urlParams = "name="+name+"&password="+password;
 
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
