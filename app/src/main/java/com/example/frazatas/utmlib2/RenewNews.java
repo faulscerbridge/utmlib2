@@ -137,7 +137,7 @@ public class RenewNews  extends ActionBarActivity {
                     List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
                     nameValuePairs.add(new BasicNameValuePair("check2", check2));
                     DefaultHttpClient httpclient = new DefaultHttpClient();//(new BasicHttpParams());
-                    HttpPost httppost = new HttpPost("http://utmlibraryapp.site88.net/stat.php");
+                    HttpPost httppost = new HttpPost("http://domain/stat.php");
                     httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     //httppost.setHeader("Content-type", "application/json");
                     HttpResponse response = httpclient.execute(httppost);
