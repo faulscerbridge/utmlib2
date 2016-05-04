@@ -75,7 +75,7 @@ public class HistoryFile  extends AppCompatActivity {
                     jsonObject.accumulate("Searchable", Searchable);
                     json = jsonObject.toString();
                     HttpClient httpClient = new DefaultHttpClient();
-                    HttpPost httpPost = new HttpPost("http://utmlibraryapp.site88.net/new.php");
+                    HttpPost httpPost = new HttpPost("http://domain/new.php");
                     httpPost.setEntity(new StringEntity(json, "UTF-8"));
                     httpPost.setHeader("Content-Type", "application/json");
                     httpPost.setHeader("Accept-Encoding", "application/json");
