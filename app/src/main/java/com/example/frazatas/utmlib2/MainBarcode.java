@@ -169,7 +169,7 @@ public class MainBarcode extends AppCompatActivity {
                     nameValuePairs.add(new BasicNameValuePair("suserid", suserid));
 
                     DefaultHttpClient httpclient = new DefaultHttpClient();//(new BasicHttpParams());
-                    HttpPost httppost = new HttpPost("http://utmlibraryapp.site88.net/borrow.php");
+                    HttpPost httppost = new HttpPost("http://domain/borrow.php");
                     httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     //httppost.setHeader("Content-type", "application/json");
                     HttpResponse response = httpclient.execute(httppost);
